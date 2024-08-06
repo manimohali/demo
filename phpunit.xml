@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         verbose="true">
+
+    <testsuites>
+        <testsuite name="My Test Suite">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <junit outputFile="tests/_output/junit.xml"/>
+        <testdoxHtml outputFile="tests/_output/testdox.html"/>
+        <coverage-html outputDirectory="tests/_output/coverage"/>
+    </logging>
+
+</phpunit>
